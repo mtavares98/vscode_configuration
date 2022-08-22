@@ -1,0 +1,62 @@
+{
+	"Header format": {
+		"prefix": "header",
+		"body": [
+			"#ifndef ${TM_FILENAME_BASE/ ([^a-zA-Z0-9])|([a-zA-Z0-9])/${1:+_}${2:/upcase}/g}_H",
+			"# define ${TM_FILENAME_BASE/ ([^a-zA-Z0-9])|([a-zA-Z0-9])/${1:+_}${2:/upcase}/g}_H",
+			"",
+			"#endif"
+		],
+		"description": "Header for .h files"
+	},
+	"include system header file": {
+		"prefix": "inc",
+		"body": [
+			"#include <$1>"
+		],
+		"description": "Includes a header file from the system"
+	},
+	"include my header files": {
+		"prefix": "minc",
+		"body": [
+			"#include \"$1\""
+		],
+		"description": "Includes a my header file"
+	},
+	"Main with ac and av": {
+		"prefix": "main",
+		"body": [
+			"int\tmain(int ac, char **av)",
+			"{",
+			"\t$1",
+			"}"
+		],
+		"description": "Main with the argc and argv"
+	},
+	"Main with no arguments": {
+		"prefix": "mainn",
+		"body": [
+			"int\tmain(void)",
+			"{\n\n}"
+		],
+		"description": "Main with no arguments"
+	},
+	"While": {
+		"prefix": "while",
+		"body": [
+			"while (++$1 $2 $3)",
+			"{",
+			"\t",
+			"}"
+		],
+		"description": "Full form of a while"
+	},
+	"While short form": {
+		"prefix": "wh",
+		"body": [
+			"while (++$1 $2 $3)",
+			"\t"
+		],
+		"description": "Short form of a while"
+	}
+}
