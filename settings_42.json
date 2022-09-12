@@ -1,0 +1,35 @@
+{
+    "42header.email": "mtavares@student.42lisboa.com",
+	"42header.username": "mtavares",
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"editor.useTabStops": true,
+	"editor.fontFamily": "JetBraninsmono NF, monospace",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 13,
+	"editor.minimap.enabled": false,
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 100,
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"files.trimFinalNewlines": true,
+	"terminal.integrated.fontFamily": "JetBrainsmono NF, monospace",
+	"workbench.colorTheme": "Tokyo Night",
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.editor.closeOnFileDelete": true,
+	"workbench.sideBar.location": "right",
+	"norminettev2.norminette_bin": "/var/data/python/bin/norminette",
+	"workbench.startupEditor": "none",
+	"C_Cpp.suggestSnippets": false,
+	"[cpp]": {
+
+		"editor.wordBasedSuggestions": false,
+		"editor.suggest.insertMode": "replace",
+		"editor.semanticHighlighting.enabled": true
+	},
+	"files.associations": {
+		"*.h": "c",
+		"*.json": "jsonc"
+	},
+	"editor.renderWhitespace": "all"
+}
